@@ -1,0 +1,23 @@
+/* silver border around cells of table */
+table {
+    border: 1px solid silver;
+}
+
+/* hover effect */
+td:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* top row */
+tr, th {
+    background-color: black;
+    color: cornsilk;
+}
+
+/*remaining rows */
+tr, td {
+    background-color: darkgreen;
+    color: white;
+}
+

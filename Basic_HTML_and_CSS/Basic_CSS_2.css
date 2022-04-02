@@ -1,0 +1,18 @@
+/* This is how you write comments in CSS */
+p   {
+        background-color: aqua;
+        color: brown;
+        text-decoration: underline;
+        font-weight: italic;
+        font-size: large;
+        text-align: right;
+    }
+
+/* CSS t-shadow property example */
+h1 {
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000FF;
+}
+
+h2 {
+    text-shadow: 2px 2px 8px #FF0000;
+}

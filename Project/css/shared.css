@@ -24,6 +24,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #E91C1C;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
 h1::after { /* This is the underline */
     display: block;
     content: " ";
@@ -36,7 +46,7 @@ h1::after { /* This is the underline */
 
 h2 {
     line-height: 50px;
-    color: #E91C1C
+    color: #E91C1C;
 }
 
 h3 {
@@ -101,7 +111,7 @@ section {
 .navbar:after {
     clear: both;
     display: table;
-    content: " "
+    content: " ";
 }
 
 .wrap {
@@ -328,4 +338,31 @@ section {
     text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
     padding: 20px 50px 20px 50px;
     text-align: right;
+}
+
+/* ======================================
+    @MEDIA QUERIES
+========================================= */
+@media all and (max-width:640px) and (min-width:381px) {
+    .head-main {
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width:381px) and (min-width:200px) {
+    .head-main {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }

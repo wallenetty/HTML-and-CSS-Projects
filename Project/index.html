@@ -1,219 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>JnBsqrd LLC</title>
         <meta charset="utf-8">
-        <meta name="Founders/Co-owners" content="Jeannette Wallen and Barrie Borchers">
+        <title>index.html</title>
+        <link rel="stylesheet" href="./css/photo_style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="./favicon/site.webmanifest">
+        <style>
+            {
+                box-sizing: border-box;
+            }
+            /* Set additional styling options for the columns */
+            .column {
+                float: left;
+            }
+
+            /* Set width length for the left, right and middle columns */
+            .left {
+                width: 20%;
+            }
+
+            .middle {
+                width: 30%;
+            }
+
+            .right {
+                width: 20%;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
     </head>
-
     <body>
-        <header>
-			<h1><font color="#FF8C00">This website is under construction.</font></h1>
-			<p><font color="purple">Please check back shortly.</font></p>
-			<p>Sorry for the inconvenience.</p>
-		</header>
- 
-        <!-- NAV -->
-        <div>
-            <div>
-                <ul>
-                    <a href="#home" id="link"><li>HOME</li></a>
-                    <a href="#about"><li>ABOUT US</li></a>
-                    <a href="#gallery"><li>GALLERY</li></a>
-                    <a href="#contact"><li>CONTACT US</li></a>
-                </ul>
+        <div class="row">
+            <div class="column left">
+                <h3>Column 1</h3>
+                <p>Data</p>
+            </div>
+            <div class="column middle">
+                <h3>Column 2</h3>
+                <p>Data</p>
+            </div>
+            <div class="column right">
+                <h3>Column 3</h3>
+                <p>Data</p>
             </div>
         </div>
-        <!-- END NAV -->
-
-        <!-- HOME -->
-        <div id="home">
-            <div>
-                <div>
-                    <span>JnBsqrd LLC</span>
-                </div>
-            </div>
-        </div>
-        <!-- END HOME -->
-
-        <!-- About Us -->
-        <section>
-            <div id="about">
-                <h1>About Us</h1>
-                <!-- Using the <time> tag datetime attribute -->
-                <p>Our company was formed on <time datetime="2020-03-13">Friday the 13th, 2020.</time></p>
-                <!-- Using a <summary> tag and <details> tag -->
-                <details>
-                    <summary>Founders/Co-Owners Photo</summary>
-                    <img src="./images/thumb/thumbnail_10.jpg"
-			width=""400"
-			height="500"/>
-                </details>
-                <!-- End <summary> tag and <details> tag --> 
-            </div>
-        </section>
-
-
-        <!-- Gallery -->
-        <section>
-            <div id="gallery">
-                <h1>Gallery</h1>
-                <div>
-
-                <!-- PHOTO-CONTAINER 1 -->
-                <div>
-                    <div>
-                        <img src="./images/thumb/thumbnail_1.jpg" alt="6' Wide Stand - Front View">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>We have (2) black-painted wooden stands with metal display framework that measure 42" Height x 72" Width x 24" Depth</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 1 -->
-
-                <!-- PHOTO-CONTAINER 2 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumb/thumbnail_2.jpg" alt="6' Wide Stand - Rear View">
-                        <div class="photo-overlay">
-                            <h3 class="white-head">Click to Enlarge</h3>
-                            <p>We have (2) black-painted wooden stands with metal display framework that measure 42" Height x 72" Width x 24" Depth</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 2 -->
-
-                <!-- PHOTO-CONTAINER 3 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumb/thumbnail_3.jpg" alt="6' Wide Stand - Pyres Event">
-                        <div class="photo-overlay">
-                            <h3 class="white-head">Click to Enlarge</h3>
-                            <p>We have (2) black-painted wooden stands with metal display framework that measure 42" Height x 72" Width x 24" Depth</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 3 -->
-
-                <!-- PHOTO-CONTAINER 4 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumb/thumbnail_4.jpg" alt="8' Wide Stand - Front View">
-                        <div class="photo-overlay">
-                            <h3 class="white-head">Click to Enlarge</h3>
-                            <p>We have (36) wooden stands that measure 42" Height x 96" Width x 24" Depth</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 4 -->
-
-                <!-- PHOTO-CONTAINER 5 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumb/thumbnail_5.jpg" alt="8' Wide Stand - Rear View">
-                        <div class="photo-overlay">
-                            <h3 class="white-head">Click to Enlarge</h3>
-                            <p>We have (36) wooden stands that measure 42" Height x 96" Width x 24" Depth</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 5 -->
-
-                <!-- PHOTO-CONTAINER 6 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumb/thumbnail_6.jpg" alt="8' Wide Stand - Shelf">
-                        <div class="photo-overlay">
-                            <h3 class="white-head">Click to Enlarge</h3>
-                            <p>We have (36) wooden stands that measure 42" Height x 96" Width x 24" Depth</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 6 -->
-
-                <!-- PHOTO-CONTAINER 7 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumb/thumbnail_7.jpg" alt="8' Wide Stand - Countertop">
-                        <div class="photo-overlay">
-                            <h3 class="white-head">Click to Enlarge</h3>
-                            <p>We have (36) wooden stands that measure 42" Height x 96" Width x 24" Depth</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 7 -->
-
-                <!-- PHOTO-CONTAINER 8 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumb/thumbnail_8.jpg" alt="8' Wide Stand - Side View">
-                        <div class="photo-overlay">
-                            <h3 class="white-head">Click to Enlarge</h3>
-                            <p>We have (36) wooden stands that measure 42" Height x 96" Width x 24" Depth</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 8 -->
-
-                <!-- PHOTO-CONTAINER 9 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumb/thumbnail_9.jpg" alt="8' Wide Stand - Red Bull Event">
-                        <div class="photo-overlay">
-                            <h3 class="white-head">Click to Enlarge</h3>
-                            <p>We have (36) wooden stands that measure 42" Height x 96" Width x 24" Depth</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PHOTO-CONTAINER 9 -->
-            
-            </div>
-        </div>
-    </section>
-    <!-- END GALLERY -->
-
-    <!-- CONTACT US -->
-    <section>
-        <div id="contact">
-            <div>
-                <h1>Contact Us</h1>
-                <div>
-                    <h3><span>Reach out to us for an estimate of your event needs.</span>
-                        <!-- Using the <time> tag -->
-                        <p>We are normally available on weekdays by phone from <time>1:30&nbsp;p.m.</time> to <time>8:00&nbsp;p.m.</time>.</p>
-                        <p>Note: Please allow for 1-2 business day response.</p>
-                    </h3>
-                    <p>
-                        Enter your contact information below:
-                    </p>
-                    <div>
-                        <form action="" method="post">
-                            <input class="contact" type="text" value="First Name"><br>
-                            <input class="contact" type="text" value="Last Name"><br>
-                            <input class="contact" type="text" value="Email Address"><br>
-                            <input class="contact" type="text" value="Phone Number"><br>
-                            <div class="form-spacer">
-                                <label class="terms">Terms and Conditions</label>
-                            </div>
-                            <div>
-                                <input type="submit" value="Submit">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END CONTACT US -->
         
-    <!-- FOOTER -->
-    <div>
-    <footer>
-		<a href="https://www.facebook.com/JnBsqrd">Find us on Facebook &nbsp;|&nbsp; &copy; 2022</a>
-	</footer>
-    </div>
-    <!-- END FOOTER -->
-
     </body>
 </html>

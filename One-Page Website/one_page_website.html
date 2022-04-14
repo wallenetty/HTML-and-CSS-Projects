@@ -3,6 +3,12 @@
     <head>
         <title>Feline Persuasion</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../Project/css/shared.css">
+        <link rel="stylesheet" hred="./css/animations.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../Project/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Project/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Project/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../Project/favicon/site.webmanifest">
     </head>
 
     <body>
@@ -11,9 +17,9 @@
 		</header>
  
         <!-- NAV -->
-        <div>
-            <div>
-                <ul>
+        <div class="wrap">
+            <div class="menu-container">
+                <ul class="menu">
                     <a href="#home" id="link"><li>HOME</li></a>
                     <a href="#products"><li>PRODUCTS</li></a>
                     <a href="#gallery"><li>GALLERY</li></a>
@@ -26,9 +32,10 @@
 
         <!-- HOME -->
         <div id="home">
-            <div>
-                <h2>Feline Persuasion</h2>
-                <p>We are dedicated to curating a collection of products and content for feline fanatics!</p>
+            <div class="container">
+                <div class="text-center">
+                    <span class="head-main">Feline Persuasion</span>
+                </div>
             </div>
         </div>
         <!-- END HOME -->
@@ -51,46 +58,45 @@
         <!-- End Products -->
 
         <!-- Gallery -->
-        <section>
-            <div id="gallery">
+        <section id="gallery">
+            <div id="container">
                 <h1>Gallery</h1>
-            <div>
-
-                <!-- PHOTO-CONTAINER 1 -->
-                <div>
-                    <div>
-                        <img src="./images/Bengal.jpg" alt="Bengal">
-                        <div>
-                            <h3>Bengal</h3>
-                            <p>The Bengal cat has the appearance of a wild leopard</p>
-                        </div>
-                    </div>
+            <div class="flex-container"
+        <!-- PHOTO-CONTAINER 1 --></div>
+        <div class="photo-container">
+            <div class="photo">
+                <img src="../One-Page Website/images/Bengal.jpg" alt="Bengal Cat">
+                <div class="photo-overlay">
+                    <h3 class="white-head">Bengal</h3>
+                    <p>The Bengal cat has the appearance of a wild leopard</p>
                 </div>
-                <!-- END PHOTO-CONTAINER 1 -->
+            </div>
+        </div>
+        <!-- END PHOTO-CONTAINER 1 -->
 
-                <!-- PHOTO-CONTAINER 2 -->
-                <div>
-                    <div>
-                        <img src="./images/Maine_Coon.jpg" alt="Maine Coon">
-                        <div>
-                            <h3>Maine Coon</h3>
-                            <p>The Maine Coon can grow to a massive size compared to other domesticated breeds</p>
-                        </div>
-                    </div>
+        <!-- PHOTO-CONTAINER 2 -->
+        <div class="photo-container">
+            <div class="photo">
+                <img src="../One-Page Website/images/Maine_Coon.jpg" alt="Maine Coon">
+                <div class="photo-overlay">
+                    <h3 class="white-head">Maine Coon</h3>
+                    <p>The Maine Coon can grow to a massive size compared to other domesticated breeds</p>
                 </div>
-                <!-- END PHOTO-CONTAINER 2 -->
+            </div>
+        </div>
+        <!-- END PHOTO-CONTAINER 2 -->
 
-                <!-- PHOTO-CONTAINER 3 -->
-                <div>
-                    <div>
-                        <img src="./images/Persian.jpg" alt="Persian">
-                        <div>
-                            <h3>Persian</h3>
-                            <p>The Persian with its short snout, carries itself with an air of royalty</p>
-                        </div>
-                    </div>
+        <!-- PHOTO-CONTAINER 3 -->
+        <div class="photo-container">
+            <div class="photo">
+                <img src="../One-Page Website/images/Persian.jpg" alt="Persian">
+                <div class="photo-overlay">
+                    <h3 class="white-head">Persian</h3>
+                    <p>The Persian with its short snout, carries itself with an air of royalty</p>
                 </div>
-                <!-- END PHOTO-CONTAINER 3 -->
+            </div>
+        </div>
+        <!-- END PHOTO-CONTAINER 3 -->
 
         <!-- END GALLERY -->
 
@@ -105,22 +111,23 @@
     <!-- End Videos -->
 
     <!-- CONTACT US -->
-    <section>
-        <div id="contact">
-            <div>
-                <h1>Contact Us</h1>
-                <div>
-                    <h3><span>Our hours of operation are Monday through Friday <time>9:00&nbsp;a.m.</time> to <time>5:00&nbsp;p.m.</time></span>
-                    </h3>
-                    <p>If you would like to reach us outside of normal business hours</p>
-                    <p>Please enter your contact information below:</p>
-                    <div>
+    <section id="contact">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Contact Us</h1>
+                <div class="contact-us">
+                    <h2><span>Our hours of operation are Monday through Friday <time>9:00&nbsp;a.m.</time> to <time>5:00&nbsp;p.m.</time></span>
+                    </h2>
+                    <p class="contact-us-text">If you would like to reach us outside of normal business hours
+                    <br>Please enter your contact information below:
+                    </p>
+                    <div class="form-contact-us">
                         <form action="" method="post">
-                            <input class="contact" type="text" value="First Name"><br>
-                            <input class="contact" type="text" value="Last Name"><br>
-                            <input class="contact" type="text" value="Email Address"><br>
-                            <input class="contact" type="text" value="Phone Number"><br>
-                            <input class="contact" type="text" value="Comments"><br>
+                            <input class="contact" type="text" value="" placeholder="First Name"><br>
+                            <input class="contact" type="text" value="" placeholder="Last Name"><br>
+                            <input class="contact" type="text" value="" placeholder="Email Address"><br>
+                            <input class="contact" type="text" value="" placeholder="Phone Number"><br>
+                            <input class="contact" type="text" value="" placeholder="Comments">
                             <div class="form-spacer">
                                 <label class="terms">Terms and Conditions</label>
                             </div>
@@ -136,9 +143,9 @@
     <!-- END CONTACT US -->
         
     <!-- FOOTER -->
-    <div>
+    <div id="footer">
     <footer>
-		<a href="www.FelinePersuasion.com">Feline Persuasion &nbsp;|&nbsp; &copy; 2022</a>
+		www.FelinePersuasion.com &nbsp;|&nbsp; &copy; 2022
 	</footer>
     </div>
     <!-- END FOOTER -->

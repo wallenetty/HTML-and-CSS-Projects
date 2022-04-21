@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="">
+        <title>Media Query Challenge</title>
+        <meta name="viewport" content="width=device-width"/>
+
+        <style>
+            html {
+                background-color: tan;
+                color: black;
+            }
+/* On screens that are 600px wide or less, the background color is blue */
+            @media screen and (max-width: 600px) {
+                html {
+                    background-color: blue;
+                    color: white;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>This is a test of the width of the device screen. If the device screen is 600px or less, the background color will change from tan with black lettering to a blue background color with white lettering.</p>
+
+    </body>
+
+</html>

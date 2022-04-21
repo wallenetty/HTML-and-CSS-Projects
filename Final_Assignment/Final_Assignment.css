@@ -1,0 +1,165 @@
+/* Center the first image, apply a CSS filter, and rounded edges to the image */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: sepia(100%);
+    border-radius: 20px;
+}
+
+/* Create a footer, center footer, and bold font */
+footer, .foot {
+    text-align: center;
+    font-weight: bold;
+    padding: 1px;
+    background-color: lightskyblue;
+    color: black;
+}
+
+/* Create a border around the table */
+table, th, td {
+    border: 2px solid;
+}
+
+/* Size of the table relative to the page */
+table {
+    width: 50%
+}
+
+/* Add padding in the cells */
+th, td {
+    padding: 15px;
+    text-align: center
+}
+
+/* Add a background color in the top row */
+th {
+    background-color: palegreen;
+    color: black;
+}
+
+/* Optional hover feature on table */
+tr:hover {background-color: lightgrey;}
+
+/* Position text over the 2nd image */
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+}
+
+/* Fixed top navigation bar with a background color */
+.navbar {
+    overflow: hidden;
+    background-color: lightskyblue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+/* Links inside the navbar with font color */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Add a hover effect to navbar*/
+.navbar a:hover {
+    background: lightgrey;
+    color: black;
+}
+
+/* Main content with top margin to avoid content overlay */
+.main {
+    margin-top: 50px;
+}
+
+/* Styling for two equal width columns and specified height */
+.column {
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Font color for the text written inside the columns */
+p {
+    color: purple;
+}
+
+/* hover over <p> element*/
+p:hover {
+    color: green;
+}
+
+/* Create an image overlay fade */
+.image {
+    opacity: 1;
+    display: block;
+    width: 50%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .25s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: burlywood;
+    color: brown;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* Position text over the video */
+.container2 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<!-- Learn something new about CSS, Part 1 of 2 sections of CSS code -->
+    <head>
+        <style>
+        body {
+          counter-reset: section;
+        }
+        
+        h4::before {
+          counter-increment: section;
+          content: "Course " counter(section) ": ";
+        }
+        </style>
+        </head>
+<!-- End of part 1 of 2 sections of CSS code -->
+
+<body>
+
+<!-- Learn something new about HTML -->
+<h2>The < q > tag</h2>
+
+<p>The < q > tag allows for a quote to be recognized in a paragraph.<br> An example of this is by writing this quote:
+<q>Can we all get along?</q><br>
+from Rodney King and quotation marks will enclose the quotation.<br>
+This could be used when adding quotes into a document or webpage.</p>
+<!-- End of learn something new about HTML -->
+
+<!-- Part 2 of 2 sections of CSS code -->
+<h2>Using CSS Counters</h2>
+
+<h4>HTML Tutorial</h4>
+<h4>CSS Tutorial</h4>
+<h4>JavaScript Tutorial</h4>
+<h4>Python Tutorial</h4>
+<h4>SQL Tutorial</h4>
+<!-- End of part 2 of 2 sections of CSS code -->
+
+</body>
+</html>

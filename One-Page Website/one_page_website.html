@@ -4,7 +4,7 @@
         <title>Feline Persuasion</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/one_page_website.css">
-        <link rel="stylesheet" href="">
+        <script src="./JS/one_page_website.js"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="../Project/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../Project/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../Project/favicon/favicon-16x16.png">
@@ -42,16 +42,62 @@
         <section id="products">
             <div id="products">
                 <h1>Products</h1>
-                <div>
-                    <img src="./images/Cat_Food.jpg" alt="Cat Food">Cat Food
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="./images/Cat_Food.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="./images/Cat_Litter.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="./images/Cat_Toys.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./images/Cat_Food.jpg" style="width:100%">
                 </div>
-                <div>
-                    <img src="./images/Cat_Litter.jpg" alt="Cat Litter">Cat Litter
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./images/Cat_Litter.jpg" style="width:100%">
                 </div>
-                <div>
-                    <img src="./images/Cat_Toys.jpg" alt="Cat Toys">Cat Toys
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./images/Cat_Toys.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="./images/Cat_Food.jpg" onclick="currentSlide(1)" alt="Cat Food">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/Cat_Litter.jpg" onclick="currentSlide(2)" alt="Cat Litter">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./images/Cat_Toys.jpg" onclick="currentSlide(3)" alt="Cat Toys">
                 </div>
             </div>
+        </div>
         </section>
         <!-- End Products -->
 
@@ -59,8 +105,7 @@
         <section id="gallery">
             <div id="container">
                 <h1>Gallery</h1>
-            <div class="flex-container"
-        <!-- PHOTO-CONTAINER 1 --></div>
+        <!-- PHOTO-CONTAINER 1 -->
         <div class="photo-container">
             <div class="photo">
                 <img src="../One-Page Website/images/Bengal.jpg" alt="Bengal Cat">

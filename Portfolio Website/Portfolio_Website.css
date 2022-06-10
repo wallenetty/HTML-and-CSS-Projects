@@ -2,6 +2,13 @@
 /* Body section */
 body {
     margin: 0%; /* This ensures the site displays all the way to the edge of the browser screen */
+    opacity: 1;
+    transition: 3s opacity;
+    letter-spacing: .2vw;
+    font-family: Avant Garde, Helvetica;
+    font-size: 1.5vw;
+    overflow-x: hidden;
+    user-select: none;
 }
 
 /* Heading 1 elements */
@@ -21,8 +28,11 @@ h1:hover {
 }
 
 /* Styling for portfolio title text */
+@media screen and (max-width: 1080px)
 .white-text {
+    font-size: 4.5vw;
     color: white; /* This is used to change the color of the portfolio title text */
+    padding-top: 10vh;
 }
 
 /*Paragraph elements */
@@ -41,6 +51,97 @@ p:hover {
     transform: scale(1.05); /* This makes the paragraphs increase slightly in size when hovered over */
 }
 
+/* Styling for quote */
+@media screen and (max-width: 1080px)
+.quote {
+    font-size: 3.5vw;
+}
+
+/* Styling for Slideshow Background */
+#Slideshow_Background {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* Styling for Slideshow Container */
+#Slideshow_Container {
+    width: 39.5vw;
+    height: auto;
+    padding-top: 4%;
+    position: relative;
+    margin: auto;
+}
+#Slideshow_Container a {
+    text-decoration: none;
+}
+
+/* Next button */
+.Next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Styling for the Previous and Next buttons */
+.Previous, .Next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2vw;
+    color: darkgray;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+/* Styling for the slideshow dot buttons */
+.dot {
+    cursor: pointer
+    height: 1vw;
+    width: 1vw;
+    margin: 0.25vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 1;
+}
+
+.active, .dot:hover {
+    background-color: black;
+}
+
+/* Styling for slideshow image fade */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+}
+
+/* Styling for slideshow images */
+.Slideshow_Images {
+    vertical-align: mmiddle;
+    height: auto;
+    box-shadow: 0px 5px 10px 12px rgb(0 0 0 / 75%);
+    width: 100%;
+}
+
+/* Styling for slideshow text */
+.text {
+    color: white;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw;
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    border-radius: 0px 0px 7px 7px;
+}
+
 /* Center class - this applies to all elements with the class = "center" */
 .center {
     text-align: center; /* This center aligns the text */
@@ -55,6 +156,8 @@ p:hover {
 /* Anchor elements */
 a {
     color: purple; /* This ensures that all links are purple */
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /* Quotation elements */
@@ -135,10 +238,10 @@ footer {
     to {top: 0vw;} /* This lowers the navbar text onto the navbar */
 }
 
-/* Screens 576px and smaller will display navbar links equally distributed */
-@media screen and (max-width: 576px) {
+/* Screens 1080px and smaller will display navbar links equally distributed */
+@media screen and (max-width: 1080px) {
     .Navbar a{
-        width: 25%; /* This makes each link take up 1/4 of the navbar */
+        width: 20%; /* This makes each link take up about 1/4 of the navbar */
         font-size: 12px;
     }
 }
@@ -167,6 +270,10 @@ footer {
     z-index: -1; /* This places the video behind the other elements on the page */ 
 }
 
+video {
+    object-fit: contain;
+}
+
 /* Screens that are 576px and smaller will not display the background video */
 @media screen and (max-width: 576px) {
     #Sunset {
@@ -183,6 +290,10 @@ footer {
     position: relative;
     -webkit-animation: moveVideoText 5.75s;
     animation: moveVideoText 5.75s;
+}
+
+div {
+    display: block;
 }
 
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
@@ -238,7 +349,7 @@ footer {
 
 /***** CONTACT FORM STYLING *****/
 /* input[type=text[ targets all text input sections of the contact form */
-input[type=text] {
+.form-container input[type=text] {
     width: 100%; /* Each input box covers the full width o the container */
     padding: 12px; /* Adds padding within the text box */
     border: 1px solid grey; /* Setting a solid border and its color */
@@ -250,12 +361,12 @@ input[type=text] {
 }
 
 /* Hover effects for input boxes */
-input[type=text]:hover {
+.form-container input[type=text]:hover {
     box-shadow: 0 0 5px darkred inset; /* This creates a red shadown in the text box when hovered over by the user */
 }
 
 /* Submit button */
-input[type=submit] {
+.form-container .btn {
     background-color: black; /* Sets the background color of the submit button to black */
     color: white; /* Sets the font color of the Submit button to white */
     font-weight: bold; /* Makes the font of the submit button bold */
@@ -270,11 +381,18 @@ input[type=submit] {
 }
 
 /* Hover effect for submit button */
-input[type=submit]:hover {
+.form-container .btn:hover {
     background-color: darkolivegreen; /* Turns the background of the submit button dark olive green when the user hovers over it */
     color: white; /* Turns the font white when hovered over */
     transform: scale(1.1); /* Makes the button increase 1.1 in size */
     transition: transform 2s; /* Makes the transform effect last 2 seconds */
+}
+
+/* Close button */
+.form-container .cancel {
+    background-color: black;
+    color: white;
+    border-color: gray;
 }
 
 /* Form element */
@@ -284,4 +402,51 @@ form {
     padding: 12px; /* Adds padding to the contact form */
     font-family: "Garamond", Times, serif;
 }
+
+/* Popup Button */
+.Pop_Up_Button {
+    position: fixed;
+    bottom: 1.75vw;
+    right: 1.75vw;
+    width: 25vw;
+    background-color: white;
+    color: black;
+    border: solid black;
+    cursor: pointer;
+    -webkit-animation: movePopup 5s;
+}
+
+/* Button */
+button {
+    font-family: "Trebuchet MS", Optima;
+    letter-spacing: .3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5vw;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+
+/* Form Popup */
+.form-popup {
+    z-index: 8;
+    display: none;
+    position: fixed;
+    bottom: 0.5vw;
+    right: 0.5vw;
+}
+
+/* Form container */
+.form-container {
+    max-width: 49vw;
+    padding: 1vw;
+    background-color: white;
+}
+
+/* Label */
+label {
+    cursor: default;
+}
+
 /***** END OF CONTACT FORM STYLING *****/

@@ -317,7 +317,7 @@ footer {
 .Column_1 {
     float: left; /* Element float to the left of its container */
     width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 1.6%;
+    padding: .5%; /* Changing the padding from 1.6% to .5% allows for all my About text to fit in the container */
     height: 450px; /* This sets the height of the column to 400px */
     background-color: palegoldenrod;
 }
@@ -336,6 +336,14 @@ footer {
     display: table; /* The display property specifies the type of display behavior; the table values tells the browser to treat the element as a table */
     clear: both; /* This clears any other elements from floating on the left or the right of an element */
 }
+
+/* This centers the images within the column container */
+.center_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /***** END OF TABLE STYLING *****/
 
 /***** CONTACT FORM STYLING *****/

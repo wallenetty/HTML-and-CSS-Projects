@@ -89,7 +89,7 @@ img {
     filter: grayscale(75%); /* This rids the pictures of 75% of their color */
     border-radius: 8px; /* This gives all images rounded edges */
     max-width: 100%; /* This ensures all images stay within the width of their container */
-    max-height: 100% /* This sets the height of all images to ensure all images stay within the height of their container */
+    max-height: 100%; /* This sets the height of all images to ensure all images stay within the height of their container */
     display: block;  /* By specifying block display we can ensure our images are able to be centered */
     margin: auto auto auto auto; /* This centers all images */
 }
@@ -164,8 +164,6 @@ footer {
 /* Formatting for background video */
 #Sunset {
     position: fixed; /* This fixes the video to the page */
-    top: 0;
-    height: 100vh;
     right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
     bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
     min-width: 100%; /* This ensures the video is displayed across the full width of the page */
@@ -306,8 +304,9 @@ footer {
 
 @keyframes fade {
     from {opacity: .4;} /* Image starts transpartent */
-    to {opacity: 1;} /* Image ends opaque
+    to {opacity: 1;} /* Image ends opaque */
 }
+
 /***** End of Slidehow Styling *****/
 
 /* TABLE STYLING - this section covers the styling of the columns and rows within the table */
@@ -319,7 +318,7 @@ footer {
     float: left; /* Element float to the left of its container */
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 1.6%;
-    height: 400px; /* This sets the height of the column to 400px */
+    height: 450px; /* This sets the height of the column to 400px */
     background-color: palegoldenrod;
 }
 
@@ -327,7 +326,7 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 400px;
+    height: 450px;
     background-color: palegreen;
 }
 

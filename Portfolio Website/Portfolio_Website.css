@@ -91,8 +91,8 @@ img {
     max-width: 100%; /* This ensures all images stay within the width of their container */
     max-height: 100%; /* This sets the height of all images to ensure all images stay within the height of their container */
     display: block;  /* By specifying block display we can ensure our images are able to be centered */
-    margin: auto auto auto auto; /* This centers all images */
-}
+    margin: auto;
+ }
 
 /* Image element hover effects */
 img:hover {

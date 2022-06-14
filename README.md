@@ -18,5 +18,4 @@ This page is an example home page for a student's portfolio site that is styled 
 
 ### Small Business Site
 
-<<<<<<< HEAD
 This page is an example home page for a small business site that is styled using CSS. It contains a navbar and gallery elements. 
